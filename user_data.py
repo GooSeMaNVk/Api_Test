@@ -14,7 +14,7 @@ invalid_params = {
 }  # Не Валидные
 
 # Параметры для Авторизации
-params = {"email": "test-dataTest1111121@yandex.ru", "password": "password"}  # Валидные
+params = {"email": "test-dataTest1111121111@yandex.ru", "password": "password"}  # Валидные
 
 lie_params = {
     "email": "test-dataTes@yandex.ru",
