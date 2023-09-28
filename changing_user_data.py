@@ -17,7 +17,7 @@ def email_change():
     assert (response.status_code) == 200
 
 
-def name_change_no_auth():1
+def name_change_no_auth():
     param = {"name": "aaa"}
     link = "https://stellarburgers.nomoreparties.site/api/auth/user"
     response = requests.patch(link, data=param)
