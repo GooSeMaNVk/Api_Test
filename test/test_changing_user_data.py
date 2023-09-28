@@ -8,7 +8,7 @@ def test_name_change():
 @allure.feature('Изменение_Почты')
 def test_email_change():
     changing_user_data.email_change()
-1
+
 
 @allure.feature('Изменение_данных_пользователя_Без_авторизации')
 def test_name_change_no_auth():
