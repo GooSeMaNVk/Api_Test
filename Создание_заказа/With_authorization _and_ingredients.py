@@ -1,5 +1,4 @@
 import requests
-import user_data
 
 headers = {'Authorization': User_data.A_Token}
 params = {

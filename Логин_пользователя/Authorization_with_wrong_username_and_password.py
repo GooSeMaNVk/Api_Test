@@ -1,6 +1,4 @@
 import requests
-import user_data
-
 
 link = "https://stellarburgers.nomoreparties.site/api/auth/login"
 

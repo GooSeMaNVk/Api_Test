@@ -1,5 +1,5 @@
 import requests
-import user_data
+from data import user_data
 
 HEADERS = {'Authorization': user_data.TOKEN}
 PARAMS = {'name': 'aaa'}

@@ -1,5 +1,6 @@
 import allure
-import create_user
+from scr import create_user
+
 
 @allure.feature('Создание_пользователя_который_уже_зарегистрирован')
 def test_true_create():

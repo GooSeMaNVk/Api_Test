@@ -1,5 +1,5 @@
 import requests
-import user_data
+from data import user_data
 
 
 #class TestWith:

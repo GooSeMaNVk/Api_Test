@@ -1,14 +1,16 @@
 import allure
-import receiving_an_order
-
-@allure.feature('Все_заказы')
-def test_all_orders():
-    receiving_an_order.all_orders()
+from scr.receiving_an_order import ReceivingOrders
 
 @allure.feature('Заказ_авторизированного_позьзователя')
 def test_auth_orders():
-    receiving_an_order.auth_orders()
+    ReceivingOrders().auth_orders()
+    print(ReceivingOrders().auth_orders().json()['orders'][0]['name'])
+    print("Номер заказа", "=", ReceivingOrders().auth_orders().json()['orders'][0]['number'])
+    assert ReceivingOrders().auth_orders().status_code == 200
+
 
 @allure.feature('Заказ_неавторизированного_позьзователя')
 def test_uh_orders():
-    receiving_an_order.uh_orders()
+    ReceivingOrders().uh_orders()
+    print(ReceivingOrders().uh_orders().json()['message'])
+    assert ReceivingOrders().uh_orders().status_code == 401
